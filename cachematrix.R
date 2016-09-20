@@ -23,7 +23,7 @@ cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
        imatrix <- x$getinv()
        if (!is.null(imatrix)){
-         message('getting from cache')  #can matrix have changed? x$get() == 
+         message('getting from cache')  
          return(imatrix)
        }
        data <- x$get()
